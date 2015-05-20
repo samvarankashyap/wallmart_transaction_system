@@ -1,0 +1,36 @@
+Customer ID: 1
+Total sale amount: 110
+Discount amount: 1
+Discounted sale amount: 109
+Reward point: 1
+Additional discount: 0
+Additional discounted sale amount: 109
+Cumulative sale amount for the next reward point: 10
+Final sale amount: 109
+Customer ID: 2
+Total sale amount: 110
+Discount amount: 1
+Discounted sale amount: 109
+Reward point: 1
+Additional discount: 0
+Additional discounted sale amount: 109
+Cumulative sale amount for the next reward point: 10
+Final sale amount: 109
+Customer ID: 3
+Total sale amount: 110
+Discount amount: 1
+Discounted sale amount: 109
+Reward point: 1
+Additional discount: 0
+Additional discounted sale amount: 109
+Cumulative sale amount for the next reward point: 10
+Final sale amount: 109
+Customer ID: 1
+Total sale amount: 110
+Discount amount: 1
+Discounted sale amount: 109
+Reward point: 24
+Additional discount: 0
+Additional discounted sale amount: 109
+Cumulative sale amount for the next reward point: 10
+Final sale amount: 109
