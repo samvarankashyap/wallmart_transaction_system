@@ -14,7 +14,7 @@ def main_menu():
         input_text = raw_input("Please enter input in given options [A,D,Q]:\n")
         if (input_text in ['A','D','Q']):
             if input_text == 'A':
-                print "Adding a new transction\n"
+                print "Adding a new transaction\n"
                 add_new_transaction()
             elif input_text =='D':
                 print "Deleting Last transaction\n"
