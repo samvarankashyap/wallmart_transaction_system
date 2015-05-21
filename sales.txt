@@ -34,3 +34,66 @@ Additional discount: 0
 Additional discounted sale amount: 109
 Cumulative sale amount for the next reward point: 10
 Final sale amount: 109
+Customer ID: 34
+Total sale amount: 334
+Discount amount: 23
+Discount sale amount: 311
+Reward point: 3.0
+Additional discount: 0
+Additional discounted sale amount: 311
+Cumulative sale amount for the next reward point: 10
+Final sale amount: 311
+Customer ID: 3
+Total sale amount: 333
+Discount amount: 23
+Discount sale amount: 310
+Reward point: 3.0
+Additional discount: 0
+Additional discounted sale amount: 310
+Cumulative sale amount for the next reward point: 10
+Final sale amount: 310
+Customer ID: 1
+Total sale amount: 200
+Discount amount: 10
+Discount sale amount: 190
+Reward point: 2.0
+Additional discount: 0
+Additional discounted sale amount: 190
+Cumulative sale amount for the next reward point: 10
+Final sale amount: 190
+Customer ID: 2
+Total sale amount: 334
+Discount amount: 23
+Discount sale amount: 311
+Reward point: 3.0
+Additional discount: 0
+Additional discounted sale amount: 311
+Cumulative sale amount for the next reward point: 10
+Final sale amount: 311
+Customer ID: 4
+Total sale amount: 333
+Discount amount: 23
+Discount sale amount: 310
+Reward point: 3.0
+Additional discount: 0
+Additional discounted sale amount: 310
+Cumulative sale amount for the next reward point: 10
+Final sale amount: 310
+Customer ID: 3
+Total sale amount: 333
+Discount amount: 23
+Discount sale amount: 310
+Reward point: 3.0
+Additional discount: 0
+Additional discounted sale amount: 310
+Cumulative sale amount for the next reward point: 10
+Final sale amount: 310
+Customer ID: 3
+Total sale amount: 333
+Discount amount: 23
+Discount sale amount: 310
+Reward point: 3.0
+Additional discount: 0
+Additional discounted sale amount: 310
+Cumulative sale amount for the next reward point: 10
+Final sale amount: 310
