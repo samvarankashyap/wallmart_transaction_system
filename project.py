@@ -27,10 +27,10 @@ def main_menu():
             print "Invalid input Please enter again\n"
 
 def add_new_transaction():
-    print "new transaction added\n"
+    # adding new transaction
     attr_dict = {}
     attr_dict["cust_id"]= raw_input("Enter customer id:\n")
-    attr_dict["total_sale_amt"]=  raw_input("Enter total Sale amount")
+    attr_dict["total_sale_amt"]=  raw_input("Enter total Sale amount:\n")
     attr_dict["discount_amount"]= calculate_discount(attr_dict["total_sale_amt"])
     attr_dict["discount_sale_amt"]= int(attr_dict["total_sale_amt"]) - int(attr_dict["discount_amount"])
     #pdb.set_trace()
@@ -43,8 +43,8 @@ def add_new_transaction():
     
 
 def delete_last_transaction(cust_id):
+    # Delete the last trasaction
     print "delete last transaction\n"
-    #pdb.set_trace()
     cust_id = int(cust_id)
     fd = open("sales.txt","r")
     lines = fd.readlines()
@@ -58,7 +58,6 @@ def delete_last_transaction(cust_id):
         if s1[0]=="Customer ID" and s1[1].strip("\n").strip()==str(cust_id):
             lines_to_remove.append(line_count)
             counter +=1
-    #pdb.set_trace()
     new_lines1 = lines[0:lines_to_remove[-1]-1]
     new_lines2 = lines[lines_to_remove[-1]-1:lines_to_remove[-1]+8]
     new_lines3 = lines[lines_to_remove[-1]+8:line_count]
@@ -73,7 +72,6 @@ def delete_last_transaction(cust_id):
 
 def calculate_discount(total_sale_amt):
     print "calculating discount\n"
-    #pdb.set_trace()
     discount =0 
     total_sale_amt = int(total_sale_amt)
     discount_details = get_discount_details()
@@ -101,12 +99,9 @@ def calculate_reward_points(total_sale_amt):
     total_sale_amt = int(total_sale_amt)
     reward = total_sale_amt/100
     reward = math.floor(reward)
-    #print reward
     return reward
 
 def write_to_transactions(attr_dict):
-    print "writing to file"
-    print attr_dict
     fd = open("sales.txt","a")
     p_str = ""
     p_str += "Customer ID: "+str(attr_dict["cust_id"])+"\n"
@@ -159,8 +154,3 @@ def next_reward_sale(cust_id):
     return 10
 
 main_menu()
-#calculate_reward_points(2340)
-#get_discount_details()
-#main_menu()
-#delete_last_transaction(1)
-#calculate_additional_discount(2,3233)
