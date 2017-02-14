@@ -3,23 +3,23 @@ import math
 import pdb
 def main():
     #Main menu function for menu.
-    forever = True 
+    forever = True
     while forever:
-        print "Welcome to W Mart\n"
-        print "Please choose an option from the followings.\n"
-        print "<A>dd a new transaction of a customer to the database\n"
-        print "<D>elete the last transaction from the database for a given customer\n"
-        print "<Q>uit\n"
-        option = raw_input("Select input in options A, D, Q :\n")
+        print("Welcome to W Mart\n")
+        print("Please choose an option from the followings.\n")
+        print("<A>dd a new transaction of a customer to the database\n")
+        print("<D>elete the last transaction from the database for a given customer\n")
+        print("<Q>uit\n")
+        option = input("Select input in options A, D, Q :\n")
         if option.upper() == 'A':
             start_transaction()
         elif option.upper() =='D':
-            customer_id = raw_input("Enter customer id:\n")
+            customer_id = input("Enter customer id:\n")
             delete_transaction(customer_id)
         elif option.upper() == 'Q':
             sys.exit(0) 
         else:
-            print "Wrong option Enter again\n"
+            print("Wrong option Enter again\n")
 
 def start_transaction():
     # start a new transaction
