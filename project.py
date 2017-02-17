@@ -4,24 +4,24 @@ import pdb
 def main_menu():
     #Main menu function for menu. 
     while True:
-        print "====================================================\n"
-        print "====================================================\n"
-        print "Welcome to W Mart\n"
-        print "Please choose an option from the followings.\n"
-        print "<A>dd a new transaction of a customer to the database\n"
-        print "<D>elete the last transaction from the database for a given customer\n"
-        print "<Q>uit\n"
+        print("====================================================\n")
+        print("====================================================\n")
+        print("Welcome to W Mart\n")
+        print("Please choose an option from the followings.\n")
+        print("<A>dd a new transaction of a customer to the database\n")
+        print("<D>elete the last transaction from the database for a given customer\n")
+        print("<Q>uit\n")
         input_text = raw_input("Please enter input in given options [A,D,Q]:\n")
         if (input_text in ['A','D','Q']):
             if input_text == 'A':
-                print "Adding a new transaction\n"
+                print("Adding a new transaction\n")
                 add_new_transaction()
             elif input_text =='D':
-                print "Deleting Last transaction\n"
+                print("Deleting Last transaction\n")
                 c_id = raw_input("Enter customer id:\n")
                 delete_last_transaction(c_id)
             elif input_text== 'Q':
-                print "Quiting ..."  
+                print("Quiting ...")
                 sys.exit(0) 
         else:
             print "Invalid input Please enter again\n"
@@ -44,7 +44,7 @@ def add_new_transaction():
 
 def delete_last_transaction(cust_id):
     # Delete the last trasaction
-    print "delete last transaction\n"
+    print("delete last transaction\n")
     cust_id = int(cust_id)
     fd = open("sales.txt","r")
     lines = fd.readlines()
@@ -71,7 +71,7 @@ def delete_last_transaction(cust_id):
     fd.close()
 
 def calculate_discount(total_sale_amt):
-    print "calculating discount\n"
+    print("calculating discount\n")
     discount =0 
     total_sale_amt = int(total_sale_amt)
     discount_details = get_discount_details()
@@ -95,7 +95,7 @@ def calculate_discount(total_sale_amt):
     return discount
 
 def calculate_reward_points(total_sale_amt):
-    print "calculating reward points"
+    print("calculating reward points")
     total_sale_amt = int(total_sale_amt)
     reward = total_sale_amt/100
     reward = math.floor(reward)
@@ -136,18 +136,16 @@ def calculate_additional_discount(cust_id,reward_points):
        s1= lines[i]
        s1 = s1.split(":")
        if s1[0]=="Customer ID" and s1[1].strip("\n").strip()==str(cust_id):
-           pdb.set_trace()
            r_line = i+4
            s2 = lines[r_line]
            s2 = s2.split(":")
            r_point = s2[1].strip("\n").strip()
            r_points += int(float(r_point))
        i+=1
-    print r_points
-    #pdb.set_trace()
+    print(r_points)
     if (r_points+reward_points)/100 > 0 :
         add_discount = math.floor(r_points+reward_points/100)*10  
-    print add_discount   
+    print(add_discount)   
     return add_discount
 
 def next_reward_sale(cust_id):
